@@ -13,8 +13,37 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
 }
+
+
+li {
+	margin-right: 2%;
+	flex: 0 0 20%;
+	max-width: 300px;
+}
+
+.last {
+	justify-self: start;
+	margin-right: 2%;
+	flex: auto;
+	max-width: 300px;
+}
+
+.img {
+	width: 100%;
+}
+
+
+
 @media (min-width: 550px) {
+	ul {
+		justify-content: flex-start;
+	}
 }
 @media (min-width: 850px) { 
+	li {
+		flex: 0 0 50%;
+	}
 }
